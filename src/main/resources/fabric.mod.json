@@ -3,9 +3,9 @@
 	"id": "end-update",
 	"version": "${version}",
 	"name": "End Update",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod which tries to bring the End update to Minecraft Java with some new original content obviously",
 	"authors": [
-		"Me!"
+		"itz Ahil (A.K.A Shaik Abdul Rahman)"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,14 +20,18 @@
 		],
 		"fabric-datagen": [
 			"net.itzshaiky.EndUpdateDataGenerator"
-		]
+		],
+        "client": [
+            "net.itzshaiky.EndUpdateClient"
+        ]
+
 	},
 	"mixins": [
 		"end-update.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
-		"minecraft": "~1.21.8",
+		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

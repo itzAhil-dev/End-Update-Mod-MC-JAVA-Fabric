@@ -2,6 +2,8 @@ package net.itzshaiky;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.itzshaiky.block.ModBlocks;
+import net.itzshaiky.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +17,7 @@ public class EndUpdate implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		
+        ModItems.initialize();
+        ModBlocks.initialize();
 	}
 }
